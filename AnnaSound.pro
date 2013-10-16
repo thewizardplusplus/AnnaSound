@@ -1,3 +1,12 @@
+# общие настройки
+TARGET = AnnaGraphics
+#TEMPLATE = lib
+#CONFIG += staticlib
+CONFIG += console
+CONFIG += warn_on
+CONFIG -= qt
+
+# файлы проекта
 HEADERS += \
 	source/anna/sound/AudioDevice.h \
 	source/anna/sound/OpenALAudioDevice.h \
@@ -36,8 +45,6 @@ SOURCES += \
 	source/anna/sound/OGGLoader.cpp \
 	source/anna/sound/PCMDataManager.cpp \
 	source/anna/sound/SoundManager.cpp
-OTHER_FILES += \
-	docs/to_do.txt
-unix {
-	LIBS += -lopenal -lvorbisfile
-}
+
+# флаги компилятора
+unix:LIBS += -lopenal -lvorbisfile

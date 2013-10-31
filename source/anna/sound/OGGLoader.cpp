@@ -1,5 +1,4 @@
 #include "OGGLoader.h"
-#include "../utils/allocation.h"
 #include <vorbis/vorbisfile.h>
 
 using namespace anna::sound;
@@ -80,8 +79,7 @@ PCMData OGGLoader::load(std::istream& source)
 	}
 	int frequency = vorbis_info->rate;
 
-	char* data = NULL;
-	ARRAY_ALLOCATION(char, data, size);
+	char* data = new char[size];
 
 	long shift = 0;
 	int section = 0;

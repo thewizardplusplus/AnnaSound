@@ -2,7 +2,6 @@
 #include "OpenALAudioDeviceCreator.h"
 #include "OGGLoaderCreator.h"
 #include "Sound.h"
-#include "../utils/allocation.h"
 #include <algorithm>
 
 using namespace anna::sound;
@@ -45,9 +44,7 @@ Sound* SoundManager::createSound(const std::string& file_path,
 	buffer->setData(data_manager.load(file_path, format));
 	audio_device->join(buffer, source);
 
-	Sound* sound = NULL;
-	ALLOCATION(Sound, sound, UNION_ARGUMENTS(this, UNION_ARGUMENTS(source,
-		buffer)));
+	Sound* sound = new Sound(this, source, buffer);
 	try {
 		sounds.push_back(sound);
 	} catch (std::bad_alloc&) {}

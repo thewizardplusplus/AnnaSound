@@ -1,5 +1,4 @@
 #include "OpenALAudioDevice.h"
-#include "../utils/allocation.h"
 #include "OpenALListener.h"
 #include "OpenALSource.h"
 #include "OpenALBuffer.h"
@@ -21,7 +20,7 @@ OpenALAudioDevice::OpenALAudioDevice(
 
 	int* attributes = NULL;
 	if (context_attributes.size()) {
-		ARRAY_ALLOCATION(int, attributes, context_attributes.size() * 2 + 1);
+		attributes = new int[context_attributes.size() * 2 + 1];
 
 		std::map<AudioDevice::ATTRIBUTE, int>::const_iterator i;
 		int j = 0;
@@ -63,7 +62,7 @@ OpenALAudioDevice::OpenALAudioDevice(
 	}
 	alcMakeContextCurrent(openal_context);
 
-	ALLOCATION(OpenALListener, listener, EMPTY_ARGUMENT);
+	listener = new OpenALListener();
 }
 
 OpenALAudioDevice::~OpenALAudioDevice(void) {
@@ -160,8 +159,7 @@ Source* OpenALAudioDevice::createSource(void)
 			"OpenAL source.");
 	}
 
-	Source* source = NULL;
-	ALLOCATION(OpenALSource, source, UNION_ARGUMENTS(this, openal_source));
+	Source* source = new OpenALSource(this, openal_source);
 
 	sources[source] = openal_source;
 
@@ -185,8 +183,7 @@ Buffer* OpenALAudioDevice::createBuffer(void)
 			"OpenAL buffer.");
 	}
 
-	Buffer* buffer = NULL;
-	ALLOCATION(OpenALBuffer, buffer, UNION_ARGUMENTS(this, openal_buffer));
+	Buffer* buffer = new OpenALBuffer(this, openal_buffer);
 
 	buffers[buffer] = openal_buffer;
 

@@ -1,6 +1,6 @@
 #include "SoundManager.h"
 #include "OpenALAudioDeviceCreator.h"
-#include "OGGLoaderCreator.h"
+#include "WavLoaderCreator.h"
 #include "Sound.h"
 #include <algorithm>
 
@@ -15,7 +15,7 @@ SoundManager::SoundManager(
 	OpenALAudioDeviceCreator audio_device_creator;
 	audio_device = audio_device_creator.createAudioDevice(context_attributes);
 
-	OGGLoaderCreator loader_creator;
+	WavLoaderCreator loader_creator;
 	data_manager.setLoader(loader_creator.createLoader());
 }
 

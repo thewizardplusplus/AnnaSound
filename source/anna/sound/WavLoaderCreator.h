@@ -1,12 +1,12 @@
-#ifndef OGGLOADERCREATOR_H
-#define OGGLOADERCREATOR_H
+#ifndef WAVLOADERCREATOR_H
+#define WAVLOADERCREATOR_H
 
 #include "LoaderCreator.h"
 
 namespace anna {
 namespace sound {
 
-class OGGLoaderCreator : public LoaderCreator {
+class WavLoaderCreator : public LoaderCreator {
 public:
 	virtual Loader* createLoader(void);
 };

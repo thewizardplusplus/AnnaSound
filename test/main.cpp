@@ -1,7 +1,7 @@
-#include "anna/sound/SoundManager.h"
-#include "anna/sound/Sound.h"
-#include "anna/sound/Source.h"
-#include "anna/sound/Buffer.h"
+#include <SoundManager.h>
+#include <Sound.h>
+#include <Source.h>
+#include <Buffer.h>
 #include <iostream>
 
 using namespace thewizardplusplus::anna::sound;

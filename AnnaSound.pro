@@ -4,9 +4,9 @@ win32:OPENAL_LIB_PATH = E:\\openal\\lib\\Win32
 
 # общие настройки
 TARGET = AnnaSound
-#TEMPLATE = lib
-#CONFIG += staticlib
-CONFIG += console
+TEMPLATE = lib
+CONFIG += staticlib
+#CONFIG += console
 CONFIG += warn_on
 CONFIG -= qt
 
@@ -53,7 +53,7 @@ HEADERS += \
 	source/thewizardplusplus/anna/sound/Sound.h \
 	source/thewizardplusplus/anna/sound/SoundManager.h
 SOURCES += \
-	source/thewizardplusplus/main.cpp \
+	#source/thewizardplusplus/main.cpp \
 	source/thewizardplusplus/utils/ByteOrderTester.cpp \
 	source/thewizardplusplus/anna/maths/Maths.cpp \
 	source/thewizardplusplus/anna/sound/exceptions/SoundException.cpp \
@@ -87,7 +87,7 @@ SOURCES += \
 
 # файлы внешних библиотек
 win32:INCLUDEPATH += $$OPENAL_INCLUDES_PATH
-win32:LIBS += -L$$OPENAL_LIB_PATH -lopenal32
+#win32:LIBS += -L$$OPENAL_LIB_PATH -lopenal32
 
 # флаги компилятора
 unix | win32-g++ {

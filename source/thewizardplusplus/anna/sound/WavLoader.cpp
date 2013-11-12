@@ -21,8 +21,8 @@ PCMData WavLoader::load(std::istream& source) {
 		ifstream::badbit);
 	try {
 		size_t mark1 = read4Bytes(source);
-		std::cout << "Mark1: \"" << std::string(reinterpret_cast<char*>(&mark1),
-			4) << "\"." << std::endl;
+		//std::cout << "Mark1: \"" << std::string(reinterpret_cast<char*>(&mark1),
+		//	4) << "\"." << std::endl;
 		if (mark1 != 0x46464952) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"mark; expected \"RIFF\"");
@@ -30,39 +30,39 @@ PCMData WavLoader::load(std::istream& source) {
 
 		source.seekg(4, std::ios_base::cur);
 		size_t mark2 = read4Bytes(source);
-		std::cout << "Mark2: \"" << std::string(reinterpret_cast<char*>(&mark2),
-			4) << "\"." << std::endl;
+		//std::cout << "Mark2: \"" << std::string(reinterpret_cast<char*>(&mark2),
+		//	4) << "\"." << std::endl;
 		if (mark2 != 0x45564157) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"mark; expected \"WAVE\"");
 		}
 
 		size_t mark3 = read4Bytes(source);
-		std::cout << "Mark3: \"" << std::string(reinterpret_cast<char*>(&mark3),
-			4) << "\"." << std::endl;
+		//std::cout << "Mark3: \"" << std::string(reinterpret_cast<char*>(&mark3),
+		//	4) << "\"." << std::endl;
 		if (mark3 != 0x20746d66) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"mark; expected \"fmt \"");
 		}
 
 		size_t size_of_chunk1 = read4Bytes(source);
-		std::cout << "Size of chunk 1: \"" << size_of_chunk1 << "\"." << std::
-			endl;
+		//std::cout << "Size of chunk 1: \"" << size_of_chunk1 << "\"." << std::
+		//	endl;
 		if (size_of_chunk1 != 16) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"type; not PCM, found extra format bytes");
 		}
 
 		size_t audio_format = read2Bytes(source);
-		std::cout << "Audio format: \"" << audio_format << "\"." << std::endl;
+		//std::cout << "Audio format: \"" << audio_format << "\"." << std::endl;
 		if (audio_format != 1) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"type; found compression");
 		}
 
 		size_t number_of_channels = read2Bytes(source);
-		std::cout << "Number of channels: \"" << number_of_channels << "\"." <<
-			std::endl;
+		//std::cout << "Number of channels: \"" << number_of_channels << "\"." <<
+		//	std::endl;
 		if (number_of_channels != 1 && number_of_channels != 2) {
 			throw ReadingException("unable to load sound data; invalid number "
 				"of channels");
@@ -71,12 +71,12 @@ PCMData WavLoader::load(std::istream& source) {
 			PCMDataType::STEREO;
 
 		size_t sample_rate = read4Bytes(source);
-		std::cout << "Sample rate: \"" << sample_rate << "\"." << std::endl;
+		//std::cout << "Sample rate: \"" << sample_rate << "\"." << std::endl;
 
 		source.seekg(4 + 2, std::ios_base::cur);
 		size_t bits_per_sample = read2Bytes(source);
-		std::cout << "Bits per sample: \"" << bits_per_sample << "\"." << std::
-			endl;
+		//std::cout << "Bits per sample: \"" << bits_per_sample << "\"." << std::
+		//	endl;
 		if (bits_per_sample != 8 && bits_per_sample != 16) {
 			throw ReadingException("unable to load sound data; invalid bits per"
 				" sample");
@@ -85,16 +85,16 @@ PCMData WavLoader::load(std::istream& source) {
 			PCMDataBits::BIT_16;
 
 		size_t mark4 = read4Bytes(source);
-		std::cout << "Mark4: \"" << std::string(reinterpret_cast<char*>(&mark4),
-			4) << "\"." << std::endl;
+		//std::cout << "Mark4: \"" << std::string(reinterpret_cast<char*>(&mark4),
+		//	4) << "\"." << std::endl;
 		if (mark4 != 0x61746164) {
 			throw ReadingException("unable to load sound data; invalid WAV-"
 				"mark; expected \"data\"");
 		}
 
 		size_t size_of_chunk2 = read4Bytes(source);
-		std::cout << "Size of chunk 2: \"" << size_of_chunk2 << "\"." << std::
-			endl;
+		//std::cout << "Size of chunk 2: \"" << size_of_chunk2 << "\"." << std::
+		//	endl;
 
 		/*size_t position = source.tellg();
 		source.seekg(0, std::ios_base::end);

@@ -9,9 +9,9 @@ Sound::Sound(SoundManager* manager, Source* source, Buffer* buffer) :
 	source(source),
 	buffer(buffer)
 {
-	assert((manager != NULL && source != NULL && buffer != NULL) && "AnnaSound "
-		"error: unable to create Sound with NULL SoundManager, NULL Source or "
-		"NULL Buffer.");
+	//assert((manager != NULL && source != NULL && buffer != NULL) && "AnnaSound "
+	//	"error: unable to create Sound with NULL SoundManager, NULL Source or "
+	//	"NULL Buffer.");
 }
 
 Sound::~Sound(void) {}

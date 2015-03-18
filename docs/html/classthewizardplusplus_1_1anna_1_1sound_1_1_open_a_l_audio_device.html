@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Anna Sound: Класс thewizardplusplus::anna::sound::OpenALAudioDevice</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Anna Sound
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Трёхмерный звуковой движок, написанный на C++ на базе OpenAL</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс thewizardplusplus::anna::sound::OpenALAudioDevice</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_open_a_l_audio_device_8h_source.html">OpenALAudioDevice.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:thewizardplusplus::anna::sound::OpenALAudioDevice:</div>
+<div class="dyncontent">
+<div class="center"><img src="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device__inherit__graph.png" border="0" usemap="#thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_inherit__map" alt="Inheritance graph"/></div>
+<map name="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_inherit__map" id="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_inherit__map">
+<area shape="rect" id="node2" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html" title="thewizardplusplus::\lanna::sound::AudioDevice" alt="" coords="29,6,203,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса thewizardplusplus::anna::sound::OpenALAudioDevice:</div>
+<div class="dyncontent">
+<div class="center"><img src="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device__coll__graph.png" border="0" usemap="#thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_coll__map" alt="Collaboration graph"/></div>
+<map name="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_coll__map" id="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device_coll__map">
+<area shape="rect" id="node2" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html" title="thewizardplusplus::\lanna::sound::AudioDevice" alt="" coords="29,113,203,154"/><area shape="rect" id="node3" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html" title="thewizardplusplus::\lanna::sound::Listener" alt="" coords="43,6,189,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:acd93a71a26fd164b479a0377e436d87f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#acd93a71a26fd164b479a0377e436d87f">OpenALAudioDevice</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a> context_attributes=<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a>())</td></tr>
+<tr class="separator:acd93a71a26fd164b479a0377e436d87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfec6a1edd6784489f399bf73732c07d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#adfec6a1edd6784489f399bf73732c07d">~OpenALAudioDevice</a> (void)</td></tr>
+<tr class="separator:adfec6a1edd6784489f399bf73732c07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db84a380b21f52395db9863ae2867eb"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a1db84a380b21f52395db9863ae2867eb">getDopplerFactor</a> (void) const </td></tr>
+<tr class="separator:a1db84a380b21f52395db9863ae2867eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ffc61d995622da46e0f1472068599a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#ad7ffc61d995622da46e0f1472068599a">setDopplerFactor</a> (float value)</td></tr>
+<tr class="separator:ad7ffc61d995622da46e0f1472068599a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fc6eb186c8fe7c6ae4ca91b44db153"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#af6fc6eb186c8fe7c6ae4ca91b44db153">getSpeedOfSound</a> (void) const </td></tr>
+<tr class="separator:af6fc6eb186c8fe7c6ae4ca91b44db153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224ed7d519e9e58d32b924b6f7e04911"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a224ed7d519e9e58d32b924b6f7e04911">setSpeedOfSound</a> (float units_per_second)</td></tr>
+<tr class="separator:a224ed7d519e9e58d32b924b6f7e04911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab862f50fee13f301fc08929021caf598"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#ab862f50fee13f301fc08929021caf598">getDistanceModel</a> (void) const </td></tr>
+<tr class="separator:ab862f50fee13f301fc08929021caf598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b41b77113a7eb064720d7f95fa2a22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a72b41b77113a7eb064720d7f95fa2a22">setDistanceModel</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a> model)</td></tr>
+<tr class="separator:a72b41b77113a7eb064720d7f95fa2a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38559474b43b89f159eb5a0116c319db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a38559474b43b89f159eb5a0116c319db">createSource</a> (void)</td></tr>
+<tr class="separator:a38559474b43b89f159eb5a0116c319db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f4d881f22b0471d7931e24b77596a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a83f4d881f22b0471d7931e24b77596a4">takeOutSource</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *source)</td></tr>
+<tr class="separator:a83f4d881f22b0471d7931e24b77596a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2b2054c2005d70d0a410fb75534d79"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#aeb2b2054c2005d70d0a410fb75534d79">createBuffer</a> (void)</td></tr>
+<tr class="separator:aeb2b2054c2005d70d0a410fb75534d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683242052a19579c07f213738e9c7e43"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#a683242052a19579c07f213738e9c7e43">takeOutBuffer</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *buffer)</td></tr>
+<tr class="separator:a683242052a19579c07f213738e9c7e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2d69e56e991bbd388ed0dfb5145590"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html#abd2d69e56e991bbd388ed0dfb5145590">join</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *buffer, <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *source)</td></tr>
+<tr class="separator:abd2d69e56e991bbd388ed0dfb5145590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">thewizardplusplus::anna::sound::AudioDevice</a></td></tr>
+<tr class="memitem:abbd596700c920f377882b353842f6577 inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#abbd596700c920f377882b353842f6577">AudioDevice</a> (void)</td></tr>
+<tr class="separator:abbd596700c920f377882b353842f6577 inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89031439304588cf4aab74d2c0bad73b inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a89031439304588cf4aab74d2c0bad73b">~AudioDevice</a> (void)</td></tr>
+<tr class="separator:a89031439304588cf4aab74d2c0bad73b inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9cd87d6d95cc878bb380792f80f8b inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">Listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a5ed9cd87d6d95cc878bb380792f80f8b">getListener</a> (void)</td></tr>
+<tr class="separator:a5ed9cd87d6d95cc878bb380792f80f8b inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">thewizardplusplus::anna::sound::AudioDevice</a></td></tr>
+<tr class="memitem:a4ea039710e422cb51f8cfa65c79ef0ed inherit pub_static_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memTemplParams" colspan="2">template&lt;typename AudioDeviceType &gt; </td></tr>
+<tr class="memitem:a4ea039710e422cb51f8cfa65c79ef0ed inherit pub_static_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memTemplItemLeft" align="right" valign="top">static AudioDeviceType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a4ea039710e422cb51f8cfa65c79ef0ed">create</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a> context_attributes)</td></tr>
+<tr class="separator:a4ea039710e422cb51f8cfa65c79ef0ed inherit pub_static_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">thewizardplusplus::anna::sound::AudioDevice</a></td></tr>
+<tr class="memitem:a1990b066307d2bfc67f7b468bb746374 inherit pro_attribs_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">Listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a1990b066307d2bfc67f7b468bb746374">listener</a></td></tr>
+<tr class="separator:a1990b066307d2bfc67f7b468bb746374 inherit pro_attribs_classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8h_source.html">OpenALAudioDevice.h</a> строка <a class="el" href="_open_a_l_audio_device_8h_source.html#l00011">11</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="acd93a71a26fd164b479a0377e436d87f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OpenALAudioDevice::OpenALAudioDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a>&#160;</td>
+          <td class="paramname"><em>context_attributes</em> = <code><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a class="anchor" id="adfec6a1edd6784489f399bf73732c07d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OpenALAudioDevice::~OpenALAudioDevice </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00071">71</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aeb2b2054c2005d70d0a410fb75534d79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> * OpenALAudioDevice::createBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00173">173</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a38559474b43b89f159eb5a0116c319db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> * OpenALAudioDevice::createSource </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00155">155</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ab862f50fee13f301fc08929021caf598"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a> OpenALAudioDevice::getDistanceModel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ae3f46ed51967ae9a3986bd4b9212785b">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00105">105</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1db84a380b21f52395db9863ae2867eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenALAudioDevice::getDopplerFactor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aa8ecfad5194a557c854a7b03e9fc3798">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00089">89</a></p>
+
+</div>
+</div>
+<a class="anchor" id="af6fc6eb186c8fe7c6ae4ca91b44db153"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenALAudioDevice::getSpeedOfSound </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a952d277940740b93e19c82319e22efc9">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00097">97</a></p>
+
+</div>
+</div>
+<a class="anchor" id="abd2d69e56e991bbd388ed0dfb5145590"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenALAudioDevice::join </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00191">191</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a72b41b77113a7eb064720d7f95fa2a22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenALAudioDevice::setDistanceModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a>&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aac84d185fdbb3328a05bd9a726b953d9">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad7ffc61d995622da46e0f1472068599a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenALAudioDevice::setDopplerFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#accb412edd027b5f0fc2b6b9c5e029666">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00093">93</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a224ed7d519e9e58d32b924b6f7e04911"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenALAudioDevice::setSpeedOfSound </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>units_per_second</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ad3fe41d7038d5c569cd9208ca74e1490">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00101">101</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a683242052a19579c07f213738e9c7e43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> * OpenALAudioDevice::takeOutBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a002741833aed88171fe14a020581e16d">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00186">186</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a83f4d881f22b0471d7931e24b77596a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> * OpenALAudioDevice::takeOutSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a> *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a40b5f6796b608af488036f950eabc971">thewizardplusplus::anna::sound::AudioDevice</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a> строка <a class="el" href="_open_a_l_audio_device_8cpp_source.html#l00168">168</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>source/thewizardplusplus/anna/sound/<a class="el" href="_open_a_l_audio_device_8h_source.html">OpenALAudioDevice.h</a></li>
+<li>source/thewizardplusplus/anna/sound/<a class="el" href="_open_a_l_audio_device_8cpp_source.html">OpenALAudioDevice.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacethewizardplusplus.html">thewizardplusplus</a></li><li class="navelem"><a class="el" href="namespacethewizardplusplus_1_1anna.html">anna</a></li><li class="navelem"><a class="el" href="namespacethewizardplusplus_1_1anna_1_1sound.html">sound</a></li><li class="navelem"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html">OpenALAudioDevice</a></li>
+    <li class="footer">Документация по Anna Sound. Последние изменения: Сб 24 Сен 2016 21:28:13. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

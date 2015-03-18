@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Anna Sound: Исходный файл source/thewizardplusplus/anna/sound/AudioDevice.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Anna Sound
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Трёхмерный звуковой движок, написанный на C++ на базе OpenAL</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_audio_device_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AudioDevice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_audio_device_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AUDIODEVICE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUDIODEVICE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_device_attribute_8h.html">AudioDeviceAttribute.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_distance_model_8h.html">DistanceModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>thewizardplusplus {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>anna {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacethewizardplusplus_1_1anna_1_1sound.html">    9</a></span>&#160;<span class="keyword">namespace </span>sound {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">Listener</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">AudioDevice</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> AudioDeviceType&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> AudioDeviceType* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a4ea039710e422cb51f8cfa65c79ef0ed">create</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        context_attributes);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#abbd596700c920f377882b353842f6577">AudioDevice</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a89031439304588cf4aab74d2c0bad73b">~AudioDevice</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aa8ecfad5194a557c854a7b03e9fc3798">getDopplerFactor</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#accb412edd027b5f0fc2b6b9c5e029666">setDopplerFactor</a>(<span class="keywordtype">float</span> value) = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a952d277940740b93e19c82319e22efc9">getSpeedOfSound</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ad3fe41d7038d5c569cd9208ca74e1490">setSpeedOfSound</a>(<span class="keywordtype">float</span> units_per_second) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ae3f46ed51967ae9a3986bd4b9212785b">getDistanceModel</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aac84d185fdbb3328a05bd9a726b953d9">setDistanceModel</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">DistanceModel::Types</a> model) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">Listener</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a5ed9cd87d6d95cc878bb380792f80f8b">getListener</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f">createSource</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a40b5f6796b608af488036f950eabc971">takeOutSource</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>* source) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1">createBuffer</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a002741833aed88171fe14a020581e16d">takeOutBuffer</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>* buffer) = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7">join</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>* buffer, <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>* source) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a1990b066307d2bfc67f7b468bb746374">   37</a></span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">Listener</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a1990b066307d2bfc67f7b468bb746374">listener</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> AudioDeviceType&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a4ea039710e422cb51f8cfa65c79ef0ed">   41</a></span>&#160;AudioDeviceType* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a4ea039710e422cb51f8cfa65c79ef0ed">AudioDevice::create</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    context_attributes)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> AudioDeviceType(context_attributes);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_listener_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_listener.html">thewizardplusplus::anna::sound::Listener</a></div><div class="ttdef"><b>Definition:</b> <a href="_listener_8h_source.html#l00010">Listener.h:10</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a40b5f6796b608af488036f950eabc971"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a40b5f6796b608af488036f950eabc971">thewizardplusplus::anna::sound::AudioDevice::takeOutSource</a></div><div class="ttdeci">virtual Source * takeOutSource(Source *source)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_ad3fe41d7038d5c569cd9208ca74e1490"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ad3fe41d7038d5c569cd9208ca74e1490">thewizardplusplus::anna::sound::AudioDevice::setSpeedOfSound</a></div><div class="ttdeci">virtual void setSpeedOfSound(float units_per_second)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a952d277940740b93e19c82319e22efc9"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a952d277940740b93e19c82319e22efc9">thewizardplusplus::anna::sound::AudioDevice::getSpeedOfSound</a></div><div class="ttdeci">virtual float getSpeedOfSound(void) const =0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_af560dcab968af1c0db89cb0e53542dc1"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1">thewizardplusplus::anna::sound::AudioDevice::createBuffer</a></div><div class="ttdeci">virtual Buffer * createBuffer(void)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_ac9ed9b3b2c1e51e1b4815ab91224eab7"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7">thewizardplusplus::anna::sound::AudioDevice::join</a></div><div class="ttdeci">virtual void join(Buffer *buffer, Source *source)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a89031439304588cf4aab74d2c0bad73b"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a89031439304588cf4aab74d2c0bad73b">thewizardplusplus::anna::sound::AudioDevice::~AudioDevice</a></div><div class="ttdeci">virtual ~AudioDevice(void)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8cpp_source.html#l00011">AudioDevice.cpp:11</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">thewizardplusplus::anna::sound::AudioDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8h_source.html#l00015">AudioDevice.h:15</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute_html_a3bccf2836936dedeb057bf94ec1d361e"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">thewizardplusplus::anna::sound::AudioDeviceAttribute::Map</a></div><div class="ttdeci">std::map&lt; Types, int &gt; Map</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_attribute_8h_source.html#l00020">AudioDeviceAttribute.h:20</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_ae3f46ed51967ae9a3986bd4b9212785b"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ae3f46ed51967ae9a3986bd4b9212785b">thewizardplusplus::anna::sound::AudioDevice::getDistanceModel</a></div><div class="ttdeci">virtual DistanceModel::Types getDistanceModel(void) const =0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a5ed9cd87d6d95cc878bb380792f80f8b"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a5ed9cd87d6d95cc878bb380792f80f8b">thewizardplusplus::anna::sound::AudioDevice::getListener</a></div><div class="ttdeci">Listener * getListener(void)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8cpp_source.html#l00016">AudioDevice.cpp:16</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_aa8ecfad5194a557c854a7b03e9fc3798"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aa8ecfad5194a557c854a7b03e9fc3798">thewizardplusplus::anna::sound::AudioDevice::getDopplerFactor</a></div><div class="ttdeci">virtual float getDopplerFactor(void) const =0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model_html_a95d42b71a866499ed92fd4d0f0a766bf"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_distance_model.html#a95d42b71a866499ed92fd4d0f0a766bf">thewizardplusplus::anna::sound::DistanceModel::Types</a></div><div class="ttdeci">Types</div><div class="ttdef"><b>Definition:</b> <a href="_distance_model_8h_source.html#l00010">DistanceModel.h:10</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_abbd596700c920f377882b353842f6577"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#abbd596700c920f377882b353842f6577">thewizardplusplus::anna::sound::AudioDevice::AudioDevice</a></div><div class="ttdeci">AudioDevice(void)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8cpp_source.html#l00007">AudioDevice.cpp:7</a></div></div>
+<div class="ttc" id="_distance_model_8h_html"><div class="ttname"><a href="_distance_model_8h.html">DistanceModel.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a2668be55c5c1ebcd2049bf547c6fc03f"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f">thewizardplusplus::anna::sound::AudioDevice::createSource</a></div><div class="ttdeci">virtual Source * createSource(void)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a002741833aed88171fe14a020581e16d"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a002741833aed88171fe14a020581e16d">thewizardplusplus::anna::sound::AudioDevice::takeOutBuffer</a></div><div class="ttdeci">virtual Buffer * takeOutBuffer(Buffer *buffer)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a1990b066307d2bfc67f7b468bb746374"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a1990b066307d2bfc67f7b468bb746374">thewizardplusplus::anna::sound::AudioDevice::listener</a></div><div class="ttdeci">Listener * listener</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8h_source.html#l00037">AudioDevice.h:37</a></div></div>
+<div class="ttc" id="_audio_device_attribute_8h_html"><div class="ttname"><a href="_audio_device_attribute_8h.html">AudioDeviceAttribute.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_accb412edd027b5f0fc2b6b9c5e029666"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#accb412edd027b5f0fc2b6b9c5e029666">thewizardplusplus::anna::sound::AudioDevice::setDopplerFactor</a></div><div class="ttdeci">virtual void setDopplerFactor(float value)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_source_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">thewizardplusplus::anna::sound::Source</a></div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00012">Source.h:12</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a4ea039710e422cb51f8cfa65c79ef0ed"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a4ea039710e422cb51f8cfa65c79ef0ed">thewizardplusplus::anna::sound::AudioDevice::create</a></div><div class="ttdeci">static AudioDeviceType * create(AudioDeviceAttribute::Map context_attributes)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8h_source.html#l00041">AudioDevice.h:41</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">thewizardplusplus::anna::sound::Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8h_source.html#l00010">Buffer.h:10</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_aac84d185fdbb3328a05bd9a726b953d9"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#aac84d185fdbb3328a05bd9a726b953d9">thewizardplusplus::anna::sound::AudioDevice::setDistanceModel</a></div><div class="ttdeci">virtual void setDistanceModel(DistanceModel::Types model)=0</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4b57ab11b9edaad2423558461aed1697.html">source</a></li><li class="navelem"><a class="el" href="dir_63d756177559a568930d6df8421c42c5.html">thewizardplusplus</a></li><li class="navelem"><a class="el" href="dir_0ee746d128812013d98b8537d574fee4.html">anna</a></li><li class="navelem"><a class="el" href="dir_e3a52b68489c3b8778ac25f2b469c64a.html">sound</a></li><li class="navelem"><a class="el" href="_audio_device_8h.html">AudioDevice.h</a></li>
+    <li class="footer">Документация по Anna Sound. Последние изменения: Сб 24 Сен 2016 21:28:13. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

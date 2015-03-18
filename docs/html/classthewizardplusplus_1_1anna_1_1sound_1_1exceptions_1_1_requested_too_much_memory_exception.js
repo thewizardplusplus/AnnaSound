@@ -1,0 +1,4 @@
+var classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_requested_too_much_memory_exception =
+[
+    [ "RequestedTooMuchMemoryException", "classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_requested_too_much_memory_exception.html#ae218bcc9cdc039cd1026cf1d982996d5", null ]
+];

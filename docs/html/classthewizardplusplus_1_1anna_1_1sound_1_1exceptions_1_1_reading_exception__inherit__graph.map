@@ -1,0 +1,7 @@
+<map id="thewizardplusplus::anna::sound::exceptions::ReadingException" name="thewizardplusplus::anna::sound::exceptions::ReadingException">
+<area shape="rect" id="node4" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_format_not_supported_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::FormatNotSupportedException" alt="" coords="627,5,837,61"/>
+<area shape="rect" id="node5" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_requested_too_much_memory_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::RequestedTooMuchMemoryException" alt="" coords="606,85,858,141"/>
+<area shape="rect" id="node6" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_open_sound_file_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToOpenSoundFileException" alt="" coords="615,165,849,221"/>
+<area shape="rect" id="node7" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_read_sound_file_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToReadSoundFileException" alt="" coords="615,245,849,301"/>
+<area shape="rect" id="node2" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_sound_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::SoundException" alt="" coords="179,125,343,181"/>
+</map>

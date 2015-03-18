@@ -1,0 +1,12 @@
+<map id="source/thewizardplusplus/anna/sound/exceptions/CreationException.h" name="source/thewizardplusplus/anna/sound/exceptions/CreationException.h">
+<area shape="rect" id="node2" href="$_creation_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/CreationException.cpp" alt="" coords="5,109,173,165"/>
+<area shape="rect" id="node3" href="$_unable_to_create_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALBufferException.h" alt="" coords="199,109,469,165"/>
+<area shape="rect" id="node6" href="$_unable_to_create_open_a_l_context_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALContextException.h" alt="" coords="495,109,776,165"/>
+<area shape="rect" id="node8" href="$_unable_to_create_open_a_l_source_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALSourceException.h" alt="" coords="802,109,1080,165"/>
+<area shape="rect" id="node10" href="$_unable_to_open_open_a_l_device_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenOpenALDeviceException.h" alt="" coords="1105,109,1375,165"/>
+<area shape="rect" id="node4" href="$_unable_to_create_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALBufferException.cpp" alt="" coords="37,213,323,269"/>
+<area shape="rect" id="node5" href="$_open_a_l_audio_device_8cpp.html" title="source/thewizardplusplus\l/anna/sound/OpenALAudioDevice.cpp" alt="" coords="669,221,912,262"/>
+<area shape="rect" id="node7" href="$_unable_to_create_open_a_l_context_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALContextException.cpp" alt="" coords="347,213,644,269"/>
+<area shape="rect" id="node9" href="$_unable_to_create_open_a_l_source_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALSourceException.cpp" alt="" coords="937,213,1228,269"/>
+<area shape="rect" id="node11" href="$_unable_to_open_open_a_l_device_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenOpenALDeviceException.cpp" alt="" coords="1253,213,1536,269"/>
+</map>

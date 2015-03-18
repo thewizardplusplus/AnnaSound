@@ -1,0 +1,9 @@
+<map id="thewizardplusplus::anna::sound::SoundManager::createSound" name="thewizardplusplus::anna::sound::SoundManager::createSound">
+<area shape="rect" id="node2" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#ade58d457a3f901d8885c66a33e8d4f89" title="thewizardplusplus::\lanna::sound::PCMDataManager::load" alt="" coords="243,41,485,82"/>
+<area shape="rect" id="node5" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1" title="thewizardplusplus::\lanna::sound::AudioDevice\l::createBuffer" alt="" coords="277,105,451,161"/>
+<area shape="rect" id="node6" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a754e538ea272cda37095d2a51e6fd870" title="thewizardplusplus::\lanna::sound::Buffer\l::setData" alt="" coords="296,185,432,241"/>
+<area shape="rect" id="node7" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f" title="thewizardplusplus::\lanna::sound::AudioDevice\l::createSource" alt="" coords="277,265,451,321"/>
+<area shape="rect" id="node8" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7" title="thewizardplusplus::\lanna::sound::AudioDevice::join" alt="" coords="263,345,465,386"/>
+<area shape="rect" id="node3" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_loader.html#a360407ddea49b5872f17bed21d3a2d68" title="thewizardplusplus::\lanna::sound::Loader::load" alt="" coords="555,5,727,46"/>
+<area shape="rect" id="node4" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_reading_exception.html#a36050a8af66e58e5c938edc805502ecb" title="thewizardplusplus::\lanna::sound::exceptions\l::ReadingException::setFilename" alt="" coords="534,69,749,125"/>
+</map>

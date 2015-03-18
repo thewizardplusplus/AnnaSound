@@ -1,0 +1,5 @@
+<map id="thewizardplusplus::anna::sound::exceptions::SettingException" name="thewizardplusplus::anna::sound::exceptions::SettingException">
+<area shape="rect" id="node4" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_set_data_to_open_a_l_buffer_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToSetDataToOpenALBuffer\lException" alt="" coords="614,5,845,75"/>
+<area shape="rect" id="node5" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_set_open_a_l_buffer_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToSetOpenALBufferException" alt="" coords="606,100,853,156"/>
+<area shape="rect" id="node2" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_sound_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::SoundException" alt="" coords="179,56,343,112"/>
+</map>

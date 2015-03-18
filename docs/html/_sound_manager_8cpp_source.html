@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Anna Sound: Исходный файл source/thewizardplusplus/anna/sound/SoundManager.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Anna Sound
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Трёхмерный звуковой движок, написанный на C++ на базе OpenAL</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_sound_manager_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SoundManager.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound_manager_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sound_manager_8h.html">SoundManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_open_a_l_audio_device_8h.html">OpenALAudioDevice.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_wav_loader_8h.html">WavLoader.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_buffer_8h.html">Buffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sound_8h.html">Sound.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>thewizardplusplus::anna::sound;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a21b6d563077a1f483e5672081a7633ef">    9</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a21b6d563077a1f483e5672081a7633ef">SoundManager::SoundManager</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">AudioDeviceAttribute::Map</a> context_attributes) :</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    audio_device(NULL)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    audio_device = AudioDevice::create&lt;OpenALAudioDevice&gt;(context_attributes);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    data_manager.<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#a19c065969b68fc6dcfc0f8c50911c9b1">setLoader</a>(<span class="keyword">new</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_wav_loader.html">WavLoader</a>());</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ab4cbf6445a75c7fc8063aa615c07c7c2">   16</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ab4cbf6445a75c7fc8063aa615c07c7c2">SoundManager::~SoundManager</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::list&lt;Sound*&gt;::iterator i = sounds.begin();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (; i != sounds.end(); ++i) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">delete</span> *i;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        *i = NULL;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">delete</span> audio_device;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    audio_device = NULL;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#abc4f7cb30c570a78fca4f857864aa78a">   27</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">AudioDevice</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#abc4f7cb30c570a78fca4f857864aa78a">SoundManager::getAudioDevice</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> audio_device;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a439e5cbd3eb9b64bfa2da886b08923df">   31</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html">PCMDataManager</a>&amp; <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a439e5cbd3eb9b64bfa2da886b08923df">SoundManager::getDataManager</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> data_manager;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ac415d04967b56dbbd8ea0aae4fdcb1a0">   35</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">Sound</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ac415d04967b56dbbd8ea0aae4fdcb1a0">SoundManager::createSound</a>(<span class="keyword">const</span> std::string&amp; file_path, <span class="keyword">const</span> std::</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">string</span>&amp; format)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html">PCMData</a> data = data_manager.<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#ade58d457a3f901d8885c66a33e8d4f89">load</a>(file_path, format);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">Buffer</a>* buffer = audio_device-&gt;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1">createBuffer</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    buffer-&gt;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a754e538ea272cda37095d2a51e6fd870">setData</a>(data);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">Source</a>* source = audio_device-&gt;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f">createSource</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    audio_device-&gt;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7">join</a>(buffer, source);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">Sound</a>* sound = <span class="keyword">new</span> <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">Sound</a>(<span class="keyword">this</span>, source, buffer);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    sounds.push_back(sound);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> sound;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ad4b4b404ee772e83098edd0524196513">   52</a></span>&#160;<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">Sound</a>* <a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ad4b4b404ee772e83098edd0524196513">SoundManager::takeOutSound</a>(<a class="code" href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">Sound</a>* sound) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    sounds.remove(sound);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> sound;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_ac415d04967b56dbbd8ea0aae4fdcb1a0"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ac415d04967b56dbbd8ea0aae4fdcb1a0">thewizardplusplus::anna::sound::SoundManager::createSound</a></div><div class="ttdeci">Sound * createSound(const std::string &amp;file_path, const std::string &amp;format=std::string())</div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00035">SoundManager.cpp:35</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_abc4f7cb30c570a78fca4f857864aa78a"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#abc4f7cb30c570a78fca4f857864aa78a">thewizardplusplus::anna::sound::SoundManager::getAudioDevice</a></div><div class="ttdeci">AudioDevice * getAudioDevice(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00027">SoundManager.cpp:27</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_af560dcab968af1c0db89cb0e53542dc1"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#af560dcab968af1c0db89cb0e53542dc1">thewizardplusplus::anna::sound::AudioDevice::createBuffer</a></div><div class="ttdeci">virtual Buffer * createBuffer(void)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_ac9ed9b3b2c1e51e1b4815ab91224eab7"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#ac9ed9b3b2c1e51e1b4815ab91224eab7">thewizardplusplus::anna::sound::AudioDevice::join</a></div><div class="ttdeci">virtual void join(Buffer *buffer, Source *source)=0</div></div>
+<div class="ttc" id="_sound_manager_8h_html"><div class="ttname"><a href="_sound_manager_8h.html">SoundManager.h</a></div></div>
+<div class="ttc" id="_open_a_l_audio_device_8h_html"><div class="ttname"><a href="_open_a_l_audio_device_8h.html">OpenALAudioDevice.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager_html_a19c065969b68fc6dcfc0f8c50911c9b1"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#a19c065969b68fc6dcfc0f8c50911c9b1">thewizardplusplus::anna::sound::PCMDataManager::setLoader</a></div><div class="ttdeci">void setLoader(Loader *loader)</div><div class="ttdef"><b>Definition:</b> <a href="_p_c_m_data_manager_8cpp_source.html#l00027">PCMDataManager.cpp:27</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound.html">thewizardplusplus::anna::sound::Sound</a></div><div class="ttdef"><b>Definition:</b> <a href="_sound_8h_source.html#l00012">Sound.h:12</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html">thewizardplusplus::anna::sound::AudioDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_8h_source.html#l00015">AudioDevice.h:15</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html">thewizardplusplus::anna::sound::PCMData</a></div><div class="ttdef"><b>Definition:</b> <a href="_p_c_m_data_8h_source.html#l00012">PCMData.h:12</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute_html_a3bccf2836936dedeb057bf94ec1d361e"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_attribute.html#a3bccf2836936dedeb057bf94ec1d361e">thewizardplusplus::anna::sound::AudioDeviceAttribute::Map</a></div><div class="ttdeci">std::map&lt; Types, int &gt; Map</div><div class="ttdef"><b>Definition:</b> <a href="_audio_device_attribute_8h_source.html#l00020">AudioDeviceAttribute.h:20</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_wav_loader_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_wav_loader.html">thewizardplusplus::anna::sound::WavLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="_wav_loader_8h_source.html#l00010">WavLoader.h:10</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html">thewizardplusplus::anna::sound::PCMDataManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_p_c_m_data_manager_8h_source.html#l00011">PCMDataManager.h:11</a></div></div>
+<div class="ttc" id="_buffer_8h_html"><div class="ttname"><a href="_buffer_8h.html">Buffer.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_a21b6d563077a1f483e5672081a7633ef"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a21b6d563077a1f483e5672081a7633ef">thewizardplusplus::anna::sound::SoundManager::SoundManager</a></div><div class="ttdeci">SoundManager(AudioDeviceAttribute::Map context_attributes=AudioDeviceAttribute::Map())</div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00009">SoundManager.cpp:9</a></div></div>
+<div class="ttc" id="_wav_loader_8h_html"><div class="ttname"><a href="_wav_loader_8h.html">WavLoader.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_ad4b4b404ee772e83098edd0524196513"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ad4b4b404ee772e83098edd0524196513">thewizardplusplus::anna::sound::SoundManager::takeOutSound</a></div><div class="ttdeci">Sound * takeOutSound(Sound *sound)</div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00052">SoundManager.cpp:52</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_a439e5cbd3eb9b64bfa2da886b08923df"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#a439e5cbd3eb9b64bfa2da886b08923df">thewizardplusplus::anna::sound::SoundManager::getDataManager</a></div><div class="ttdeci">PCMDataManager &amp; getDataManager(void)</div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00031">SoundManager.cpp:31</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device_html_a2668be55c5c1ebcd2049bf547c6fc03f"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_audio_device.html#a2668be55c5c1ebcd2049bf547c6fc03f">thewizardplusplus::anna::sound::AudioDevice::createSource</a></div><div class="ttdeci">virtual Source * createSource(void)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_source_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_source.html">thewizardplusplus::anna::sound::Source</a></div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00012">Source.h:12</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager_html_ade58d457a3f901d8885c66a33e8d4f89"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#ade58d457a3f901d8885c66a33e8d4f89">thewizardplusplus::anna::sound::PCMDataManager::load</a></div><div class="ttdeci">PCMData load(const std::string &amp;file_path, const std::string &amp;format=std::string())</div><div class="ttdef"><b>Definition:</b> <a href="_p_c_m_data_manager_8cpp_source.html#l00037">PCMDataManager.cpp:37</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer_html_a754e538ea272cda37095d2a51e6fd870"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a754e538ea272cda37095d2a51e6fd870">thewizardplusplus::anna::sound::Buffer::setData</a></div><div class="ttdeci">virtual void setData(const PCMData &amp;data)=0</div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager_html_ab4cbf6445a75c7fc8063aa615c07c7c2"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_sound_manager.html#ab4cbf6445a75c7fc8063aa615c07c7c2">thewizardplusplus::anna::sound::SoundManager::~SoundManager</a></div><div class="ttdeci">~SoundManager(void)</div><div class="ttdef"><b>Definition:</b> <a href="_sound_manager_8cpp_source.html#l00016">SoundManager.cpp:16</a></div></div>
+<div class="ttc" id="_sound_8h_html"><div class="ttname"><a href="_sound_8h.html">Sound.h</a></div></div>
+<div class="ttc" id="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer_html"><div class="ttname"><a href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">thewizardplusplus::anna::sound::Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8h_source.html#l00010">Buffer.h:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4b57ab11b9edaad2423558461aed1697.html">source</a></li><li class="navelem"><a class="el" href="dir_63d756177559a568930d6df8421c42c5.html">thewizardplusplus</a></li><li class="navelem"><a class="el" href="dir_0ee746d128812013d98b8537d574fee4.html">anna</a></li><li class="navelem"><a class="el" href="dir_e3a52b68489c3b8778ac25f2b469c64a.html">sound</a></li><li class="navelem"><a class="el" href="_sound_manager_8cpp.html">SoundManager.cpp</a></li>
+    <li class="footer">Документация по Anna Sound. Последние изменения: Сб 24 Сен 2016 21:28:13. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

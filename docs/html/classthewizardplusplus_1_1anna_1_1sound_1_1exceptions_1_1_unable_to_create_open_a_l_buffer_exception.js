@@ -1,0 +1,4 @@
+var classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_buffer_exception =
+[
+    [ "UnableToCreateOpenALBufferException", "classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_buffer_exception.html#a31469926e2218d65cbcc559060740820", null ]
+];

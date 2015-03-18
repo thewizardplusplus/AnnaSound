@@ -1,0 +1,4 @@
+var classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_open_open_a_l_device_exception =
+[
+    [ "UnableToOpenOpenALDeviceException", "classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_open_open_a_l_device_exception.html#a009fbbc57cb8ebb1f8677fc7e5fa1ef1", null ]
+];

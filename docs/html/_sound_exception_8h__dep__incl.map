@@ -1,0 +1,33 @@
+<map id="source/thewizardplusplus/anna/sound/exceptions/SoundException.h" name="source/thewizardplusplus/anna/sound/exceptions/SoundException.h">
+<area shape="rect" id="node2" href="$_creation_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/CreationException.h" alt="" coords="818,109,987,165"/>
+<area shape="rect" id="node13" href="$_reading_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/ReadingException.h" alt="" coords="2853,109,3021,165"/>
+<area shape="rect" id="node25" href="$_setting_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/SettingException.h" alt="" coords="1993,109,2161,165"/>
+<area shape="rect" id="node32" href="$_sound_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/SoundException.cpp" alt="" coords="3046,109,3215,165"/>
+<area shape="rect" id="node3" href="$_creation_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/CreationException.cpp" alt="" coords="422,213,591,269"/>
+<area shape="rect" id="node4" href="$_unable_to_create_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALBufferException.h" alt="" coords="616,213,887,269"/>
+<area shape="rect" id="node7" href="$_unable_to_create_open_a_l_context_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALContextException.h" alt="" coords="912,213,1193,269"/>
+<area shape="rect" id="node9" href="$_unable_to_create_open_a_l_source_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALSourceException.h" alt="" coords="1219,213,1497,269"/>
+<area shape="rect" id="node11" href="$_unable_to_open_open_a_l_device_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenOpenALDeviceException.h" alt="" coords="127,213,397,269"/>
+<area shape="rect" id="node5" href="$_unable_to_create_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALBufferException.cpp" alt="" coords="313,317,599,373"/>
+<area shape="rect" id="node6" href="$_open_a_l_audio_device_8cpp.html" title="source/thewizardplusplus\l/anna/sound/OpenALAudioDevice.cpp" alt="" coords="945,325,1188,366"/>
+<area shape="rect" id="node8" href="$_unable_to_create_open_a_l_context_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALContextException.cpp" alt="" coords="623,317,920,373"/>
+<area shape="rect" id="node10" href="$_unable_to_create_open_a_l_source_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToCreateOpenALSourceException.cpp" alt="" coords="1213,317,1504,373"/>
+<area shape="rect" id="node12" href="$_unable_to_open_open_a_l_device_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenOpenALDeviceException.cpp" alt="" coords="5,317,288,373"/>
+<area shape="rect" id="node14" href="$_format_not_supported_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/FormatNotSupportedException.h" alt="" coords="3540,213,3756,269"/>
+<area shape="rect" id="node17" href="$_reading_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/ReadingException.cpp" alt="" coords="3346,213,3515,269"/>
+<area shape="rect" id="node18" href="$_requested_too_much_memory_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/RequestedTooMuchMemoryException.h" alt="" coords="2535,213,2792,269"/>
+<area shape="rect" id="node21" href="$_unable_to_open_sound_file_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenSoundFileException.h" alt="" coords="3081,213,3321,269"/>
+<area shape="rect" id="node23" href="$_unable_to_read_sound_file_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToReadSoundFileException.h" alt="" coords="2817,213,3057,269"/>
+<area shape="rect" id="node15" href="$_format_not_supported_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/FormatNotSupportedException.cpp" alt="" coords="3705,317,3935,373"/>
+<area shape="rect" id="node16" href="$_p_c_m_data_manager_8cpp.html" title="source/thewizardplusplus\l/anna/sound/PCMDataManager.cpp" alt="" coords="3450,325,3680,366"/>
+<area shape="rect" id="node19" href="$_requested_too_much_memory_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/RequestedTooMuchMemoryException.cpp" alt="" coords="2383,317,2656,373"/>
+<area shape="rect" id="node20" href="$_wav_loader_8cpp.html" title="source/thewizardplusplus\l/anna/sound/WavLoader.cpp" alt="" coords="2681,325,2868,366"/>
+<area shape="rect" id="node22" href="$_unable_to_open_sound_file_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToOpenSoundFileException.cpp" alt="" coords="3171,317,3425,373"/>
+<area shape="rect" id="node24" href="$_unable_to_read_sound_file_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToReadSoundFileException.cpp" alt="" coords="2893,317,3147,373"/>
+<area shape="rect" id="node26" href="$_setting_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/SettingException.cpp" alt="" coords="1865,213,2033,269"/>
+<area shape="rect" id="node27" href="$_unable_to_set_data_to_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetDataToOpenALBufferException.h" alt="" coords="2059,213,2353,269"/>
+<area shape="rect" id="node30" href="$_unable_to_set_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetOpenALBufferException.h" alt="" coords="1536,213,1789,269"/>
+<area shape="rect" id="node28" href="$_unable_to_set_data_to_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetDataToOpenALBufferException.cpp" alt="" coords="1821,317,2131,373"/>
+<area shape="rect" id="node29" href="$_open_a_l_buffer_8cpp.html" title="source/thewizardplusplus\l/anna/sound/OpenALBuffer.cpp" alt="" coords="2155,325,2359,366"/>
+<area shape="rect" id="node31" href="$_unable_to_set_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetOpenALBufferException.cpp" alt="" coords="1529,317,1796,373"/>
+</map>

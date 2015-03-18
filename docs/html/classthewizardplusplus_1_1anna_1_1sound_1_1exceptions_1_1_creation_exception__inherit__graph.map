@@ -1,0 +1,7 @@
+<map id="thewizardplusplus::anna::sound::exceptions::CreationException" name="thewizardplusplus::anna::sound::exceptions::CreationException">
+<area shape="rect" id="node4" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_buffer_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToCreateOpenALBufferException" alt="" coords="611,5,877,61"/>
+<area shape="rect" id="node5" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_context_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToCreateOpenALContextException" alt="" coords="606,85,882,141"/>
+<area shape="rect" id="node6" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_source_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToCreateOpenALSourceException" alt="" coords="609,165,879,221"/>
+<area shape="rect" id="node7" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_open_open_a_l_device_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::UnableToOpenOpenALDeviceException" alt="" coords="613,245,875,301"/>
+<area shape="rect" id="node2" href="$classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_sound_exception.html" title="thewizardplusplus::\lanna::sound::exceptions\l::SoundException" alt="" coords="179,125,343,181"/>
+</map>

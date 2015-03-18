@@ -1,0 +1,4 @@
+var classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_read_sound_file_exception =
+[
+    [ "UnableToReadSoundFileException", "classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_read_sound_file_exception.html#a69a3cf0a3812e0f85bd207f37646257b", null ]
+];

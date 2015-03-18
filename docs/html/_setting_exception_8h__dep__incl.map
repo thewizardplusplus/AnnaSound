@@ -1,0 +1,9 @@
+<map id="source/thewizardplusplus/anna/sound/exceptions/SettingException.h" name="source/thewizardplusplus/anna/sound/exceptions/SettingException.h">
+<area shape="rect" id="node2" href="$_setting_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/SettingException.cpp" alt="" coords="89,109,257,165"/>
+<area shape="rect" id="node3" href="$_unable_to_set_data_to_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetDataToOpenALBufferException.h" alt="" coords="283,109,577,165"/>
+<area shape="rect" id="node6" href="$_unable_to_set_open_a_l_buffer_exception_8h.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetOpenALBufferException.h" alt="" coords="603,109,856,165"/>
+<area shape="rect" id="node4" href="$_unable_to_set_data_to_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetDataToOpenALBufferException.cpp" alt="" coords="5,213,315,269"/>
+<area shape="rect" id="node5" href="$_open_a_l_buffer_8cpp.html" title="source/thewizardplusplus\l/anna/sound/OpenALBuffer.cpp" alt="" coords="339,221,543,262"/>
+<area shape="rect" id="node7" href="$_unable_to_set_open_a_l_buffer_exception_8cpp.html" title="source/thewizardplusplus\l/anna/sound/exceptions\l/UnableToSetOpenALBufferException.cpp" alt="" coords="587,213,853,269"/>
+<area shape="rect" id="node8" href="$_open_a_l_audio_device_8cpp.html" title="source/thewizardplusplus\l/anna/sound/OpenALAudioDevice.cpp" alt="" coords="877,221,1120,262"/>
+</map>

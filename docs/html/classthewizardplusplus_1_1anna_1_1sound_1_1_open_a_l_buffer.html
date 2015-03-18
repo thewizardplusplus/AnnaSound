@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Anna Sound: Класс thewizardplusplus::anna::sound::OpenALBuffer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Anna Sound
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Трёхмерный звуковой движок, написанный на C++ на базе OpenAL</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс thewizardplusplus::anna::sound::OpenALBuffer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_open_a_l_buffer_8h_source.html">OpenALBuffer.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:thewizardplusplus::anna::sound::OpenALBuffer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer__inherit__graph.png" border="0" usemap="#thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_inherit__map" alt="Inheritance graph"/></div>
+<map name="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_inherit__map" id="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_inherit__map">
+<area shape="rect" id="node2" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html" title="thewizardplusplus::\lanna::sound::Buffer" alt="" coords="28,6,163,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса thewizardplusplus::anna::sound::OpenALBuffer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer__coll__graph.png" border="0" usemap="#thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_coll__map" alt="Collaboration graph"/></div>
+<map name="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_coll__map" id="thewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_coll__map">
+<area shape="rect" id="node2" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html" title="thewizardplusplus::\lanna::sound::Buffer" alt="" coords="28,6,163,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a302951a36c9277a1d2ff66621b2af346"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#a302951a36c9277a1d2ff66621b2af346">OpenALBuffer</a> (<a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html">OpenALAudioDevice</a> *audio_device, unsigned int openal_buffer)</td></tr>
+<tr class="separator:a302951a36c9277a1d2ff66621b2af346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b7d009ca032dc1df8c0f6564c4639e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#ac3b7d009ca032dc1df8c0f6564c4639e">~OpenALBuffer</a> (void)</td></tr>
+<tr class="separator:ac3b7d009ca032dc1df8c0f6564c4639e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01ed8bb6ece9d1216b36a8097b82a1d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#ac01ed8bb6ece9d1216b36a8097b82a1d">getSize</a> (void) const </td></tr>
+<tr class="separator:ac01ed8bb6ece9d1216b36a8097b82a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e92f43288670d7b95c0a4c4959a014"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_type.html#af65ff897b44b91a74282f92a3d89a0fc">PCMDataType::Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#a59e92f43288670d7b95c0a4c4959a014">getType</a> (void) const </td></tr>
+<tr class="separator:a59e92f43288670d7b95c0a4c4959a014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eeddd69dfb5a7e00f584f28fcc8e461"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_bits.html#a9f3fb864f916af859dc9e72e89e85e69">PCMDataBits::Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#a5eeddd69dfb5a7e00f584f28fcc8e461">getBits</a> (void) const </td></tr>
+<tr class="separator:a5eeddd69dfb5a7e00f584f28fcc8e461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06b1a3426c742a180ea913abf514fdb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#ac06b1a3426c742a180ea913abf514fdb">getFrequency</a> (void) const </td></tr>
+<tr class="separator:ac06b1a3426c742a180ea913abf514fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981b8b6ad23ed62f1d40ab5280151efe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html#a981b8b6ad23ed62f1d40ab5280151efe">setData</a> (const <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html">PCMData</a> &amp;data)</td></tr>
+<tr class="separator:a981b8b6ad23ed62f1d40ab5280151efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_buffer')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html">thewizardplusplus::anna::sound::Buffer</a></td></tr>
+<tr class="memitem:a884ca5fae46e971a28b63b901b2330ae inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_buffer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a884ca5fae46e971a28b63b901b2330ae">~Buffer</a> (void)</td></tr>
+<tr class="separator:a884ca5fae46e971a28b63b901b2330ae inherit pub_methods_classthewizardplusplus_1_1anna_1_1sound_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8h_source.html">OpenALBuffer.h</a> строка <a class="el" href="_open_a_l_buffer_8h_source.html#l00012">12</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a302951a36c9277a1d2ff66621b2af346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OpenALBuffer::OpenALBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_audio_device.html">OpenALAudioDevice</a> *&#160;</td>
+          <td class="paramname"><em>audio_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>openal_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00009">9</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac3b7d009ca032dc1df8c0f6564c4639e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OpenALBuffer::~OpenALBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a5eeddd69dfb5a7e00f584f28fcc8e461"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_bits.html#a9f3fb864f916af859dc9e72e89e85e69">PCMDataBits::Types</a> OpenALBuffer::getBits </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a27e9567b80031d270d6158ebee788507">thewizardplusplus::anna::sound::Buffer</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac06b1a3426c742a180ea913abf514fdb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OpenALBuffer::getFrequency </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a96c63f0434163c7dc36a26a0a571aa7d">thewizardplusplus::anna::sound::Buffer</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac01ed8bb6ece9d1216b36a8097b82a1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OpenALBuffer::getSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a4f7e53d1f53505d3e3aeedee6be9ed94">thewizardplusplus::anna::sound::Buffer</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a59e92f43288670d7b95c0a4c4959a014"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_type.html#af65ff897b44b91a74282f92a3d89a0fc">PCMDataType::Types</a> OpenALBuffer::getType </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a1791cd280899f888a6330eed537b5c04">thewizardplusplus::anna::sound::Buffer</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a981b8b6ad23ed62f1d40ab5280151efe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenALBuffer::setData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html">PCMData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_buffer.html#a754e538ea272cda37095d2a51e6fd870">thewizardplusplus::anna::sound::Buffer</a>.</p>
+
+<p>См. определение в файле <a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a> строка <a class="el" href="_open_a_l_buffer_8cpp_source.html#l00053">53</a></p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_a981b8b6ad23ed62f1d40ab5280151efe_cgraph.png" border="0" usemap="#classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_a981b8b6ad23ed62f1d40ab5280151efe_cgraph" alt=""/></div>
+<map name="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_a981b8b6ad23ed62f1d40ab5280151efe_cgraph" id="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer_a981b8b6ad23ed62f1d40ab5280151efe_cgraph">
+<area shape="rect" id="node2" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#a96bf22dc642df3bb6ba1f2373581f23d" title="thewizardplusplus::\lanna::sound::PCMData\l::isValid" alt="" coords="238,5,397,61"/><area shape="rect" id="node3" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#a9564bd70fadddc1904a1ee97a4e14b28" title="thewizardplusplus::\lanna::sound::PCMData\l::getSize" alt="" coords="238,85,397,141"/><area shape="rect" id="node4" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#a4b3a8de06ece59e304c6889c68a57984" title="thewizardplusplus::\lanna::sound::PCMData\l::getType" alt="" coords="238,165,397,221"/><area shape="rect" id="node5" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#a9017e8cd5aecee5287ec22bdb917faab" title="thewizardplusplus::\lanna::sound::PCMData\l::getBits" alt="" coords="238,245,397,301"/><area shape="rect" id="node6" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#a3308f2676a844860b69fa7f0c1231ae9" title="thewizardplusplus::\lanna::sound::PCMData\l::getFrequency" alt="" coords="238,325,397,381"/><area shape="rect" id="node7" href="classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data.html#aa401c48a2cbb80d23f3dc405e30d5ed9" title="thewizardplusplus::\lanna::sound::PCMData\l::getData" alt="" coords="238,405,397,461"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>source/thewizardplusplus/anna/sound/<a class="el" href="_open_a_l_buffer_8h_source.html">OpenALBuffer.h</a></li>
+<li>source/thewizardplusplus/anna/sound/<a class="el" href="_open_a_l_buffer_8cpp_source.html">OpenALBuffer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacethewizardplusplus.html">thewizardplusplus</a></li><li class="navelem"><a class="el" href="namespacethewizardplusplus_1_1anna.html">anna</a></li><li class="navelem"><a class="el" href="namespacethewizardplusplus_1_1anna_1_1sound.html">sound</a></li><li class="navelem"><a class="el" href="classthewizardplusplus_1_1anna_1_1sound_1_1_open_a_l_buffer.html">OpenALBuffer</a></li>
+    <li class="footer">Документация по Anna Sound. Последние изменения: Сб 24 Сен 2016 21:28:13. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

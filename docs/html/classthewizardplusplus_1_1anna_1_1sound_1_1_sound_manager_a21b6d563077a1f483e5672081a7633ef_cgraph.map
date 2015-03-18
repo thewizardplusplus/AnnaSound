@@ -1,0 +1,4 @@
+<map id="thewizardplusplus::anna::sound::SoundManager::SoundManager" name="thewizardplusplus::anna::sound::SoundManager::SoundManager">
+<area shape="rect" id="node2" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_p_c_m_data_manager.html#a19c065969b68fc6dcfc0f8c50911c9b1" title="thewizardplusplus::\lanna::sound::PCMDataManager\l::setLoader" alt="" coords="243,4,453,60"/>
+<area shape="rect" id="node3" href="$classthewizardplusplus_1_1anna_1_1sound_1_1_loader.html#a33cfeefc94d3aa9b35e70bb70a4f6420" title="thewizardplusplus::\lanna::sound::Loader\l::getSupportedFormats" alt="" coords="501,4,656,60"/>
+</map>

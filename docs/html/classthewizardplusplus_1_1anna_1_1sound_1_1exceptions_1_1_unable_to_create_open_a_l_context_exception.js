@@ -1,0 +1,4 @@
+var classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_context_exception =
+[
+    [ "UnableToCreateOpenALContextException", "classthewizardplusplus_1_1anna_1_1sound_1_1exceptions_1_1_unable_to_create_open_a_l_context_exception.html#a53c87b8a5e6f75c81916f6e15f9e1795", null ]
+];

@@ -51,7 +51,7 @@ main: $(OBJECTS)
 	rsync -r --include="*/" --include="*.h" --exclude="*" $(SOURCE_BASE) $(BUILD_HEADERS)
 
 install:
-	cp -r $(BUILD_HEADERS)* /usr/include/
+	cp -vr $(BUILD_HEADERS)* /usr/include/
 	cp $(LIBRARY_NAME) /usr/lib/
 
 docs:

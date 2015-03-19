@@ -36,18 +36,23 @@ OBJECTS = \
 BUILD = build/
 BUILD_HEADERS = $(BUILD)headers/
 BUILD_LIBRARIES = $(BUILD)libraries/anna/sound/
+LIBRARY_NAME = $(BUILD_LIBRARIES)libAnnaSound.a
 DOCS = docs/
 CXXFLAGS += -std=c++03 -Wpedantic -Wall -Wextra -O2
 
-.PHONY: docs clean
+.PHONY: install docs clean
 
 main: $(OBJECTS)
 	mkdir -p $(BUILD_LIBRARIES)
-	$(AR) crs $(BUILD_LIBRARIES)libAnnaSound.a $(OBJECTS)
+	$(AR) crs $(LIBRARY_NAME) $(OBJECTS)
 
 	$(RM) -r $(BUILD_HEADERS)
 	mkdir -p $(BUILD_HEADERS)
 	rsync -r --include="*/" --include="*.h" --exclude="*" $(SOURCE_BASE) $(BUILD_HEADERS)
+
+install:
+	cp -r $(BUILD_HEADERS)* /usr/include/
+	cp $(LIBRARY_NAME) /usr/lib/
 
 docs:
 	$(RM) -r $(DOCS)/html/

@@ -28,7 +28,7 @@ Sound* LoadAndPlayFire(
 );
 void RotateFire(Sound* fire, float current_time);
 bool IsRightTime(float time);
-std::string ToString(float number);
+std::string ToString(float number, size_t minimal_width = 0);
 void LogFirePosition(Sound* fire);
 
 int main(int number_of_arguments, char* arguments[]) try {
@@ -82,7 +82,7 @@ Sound* LoadAndPlayWind(
 void Log(const std::string& message) {
 	float current_time_in_ms = 1000 * GetCurrentTime();
 	std::cout
-		<< ToString(current_time_in_ms) << " ms\t"
+		<< ToString(current_time_in_ms, 5) << " ms\t"
 		<< message << std::endl;
 	std::cout << std::flush;
 }
@@ -131,9 +131,13 @@ void LogFirePosition(Sound* fire) {
 	);
 }
 
-std::string ToString(float number) {
+std::string ToString(float number, size_t minimal_width) {
 	std::ostringstream out;
-	out << std::fixed << std::setprecision(2) << number;
+	out << std::fixed << std::setprecision(2);
+	if (minimal_width > 0) {
+		out << std::setw(minimal_width);
+	}
+	out << number;
 
 	return out.str();
 }
